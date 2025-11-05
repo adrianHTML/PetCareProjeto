@@ -55,6 +55,7 @@
             this.btn_cadCliente.TabIndex = 1;
             this.btn_cadCliente.Text = "Cadastro Cliente";
             this.btn_cadCliente.UseVisualStyleBackColor = true;
+            this.btn_cadCliente.Click += new System.EventHandler(this.btn_cadCliente_Click);
             // 
             // btn_cadAnimal
             // 

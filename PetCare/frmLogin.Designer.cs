@@ -35,6 +35,7 @@
             this.txt_senha = new System.Windows.Forms.TextBox();
             this.btn_entrar = new System.Windows.Forms.Button();
             this.btn_limpar = new System.Windows.Forms.Button();
+            this.btn_sair = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,7 +86,7 @@
             // btn_entrar
             // 
             this.btn_entrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_entrar.Location = new System.Drawing.Point(318, 249);
+            this.btn_entrar.Location = new System.Drawing.Point(66, 265);
             this.btn_entrar.Name = "btn_entrar";
             this.btn_entrar.Size = new System.Drawing.Size(170, 65);
             this.btn_entrar.TabIndex = 5;
@@ -96,7 +97,7 @@
             // btn_limpar
             // 
             this.btn_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpar.Location = new System.Drawing.Point(510, 249);
+            this.btn_limpar.Location = new System.Drawing.Point(275, 265);
             this.btn_limpar.Name = "btn_limpar";
             this.btn_limpar.Size = new System.Drawing.Size(170, 65);
             this.btn_limpar.TabIndex = 6;
@@ -104,11 +105,23 @@
             this.btn_limpar.UseVisualStyleBackColor = true;
             this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
             // 
+            // btn_sair
+            // 
+            this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sair.Location = new System.Drawing.Point(483, 265);
+            this.btn_sair.Name = "btn_sair";
+            this.btn_sair.Size = new System.Drawing.Size(170, 65);
+            this.btn_sair.TabIndex = 7;
+            this.btn_sair.Text = "Sair";
+            this.btn_sair.UseVisualStyleBackColor = true;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
+            // 
             // frm_login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_limpar);
             this.Controls.Add(this.btn_entrar);
             this.Controls.Add(this.txt_senha);
@@ -133,6 +146,7 @@
         private System.Windows.Forms.TextBox txt_senha;
         private System.Windows.Forms.Button btn_entrar;
         private System.Windows.Forms.Button btn_limpar;
+        private System.Windows.Forms.Button btn_sair;
     }
 }
 

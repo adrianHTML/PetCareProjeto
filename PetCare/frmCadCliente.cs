@@ -10,28 +10,27 @@ using System.Windows.Forms;
 
 namespace PetCare
 {
-    public partial class frmMenuPrincipal : Form
+    public partial class frmCadCliente : Form
     {
-        public frmMenuPrincipal()
+        public frmCadCliente()
         {
             InitializeComponent();
         }
 
-        private void btn_cadAnimal_Click(object sender, EventArgs e)
+        private void btn_limpar_Click(object sender, EventArgs e)
         {
-
+            txt_nome.Clear();
+            txt_idade.Clear();
+            txt_codigo.Clear();
         }
 
-        private void btn_cadVet_Click(object sender, EventArgs e)
+        private void btn_voltar_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void btn_cadCliente_Click(object sender, EventArgs e)
-        {
-            frmCadCliente abrir = new frmCadCliente();
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
             abrir.Show();
             this.Hide();
         }
+
+
     }
 }

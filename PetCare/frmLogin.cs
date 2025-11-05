@@ -43,5 +43,10 @@ namespace PetCare
             txt_nome.Clear();
             txt_senha.Clear();
         }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
