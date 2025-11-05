@@ -121,7 +121,7 @@
             // btn_limpar
             // 
             this.btn_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpar.Location = new System.Drawing.Point(243, 299);
+            this.btn_limpar.Location = new System.Drawing.Point(238, 319);
             this.btn_limpar.Name = "btn_limpar";
             this.btn_limpar.Size = new System.Drawing.Size(166, 50);
             this.btn_limpar.TabIndex = 3;
