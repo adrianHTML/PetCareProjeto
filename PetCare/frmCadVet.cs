@@ -16,5 +16,24 @@ namespace PetCare
         {
             InitializeComponent();
         }
+
+        private void btn_limpar_Click(object sender, EventArgs e)
+        {
+            txt_nome.Clear();
+            txt_codigo.Clear();
+            txt_idade.Clear();
+        }
+
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void btn_voltar_Click(object sender, EventArgs e)
+        {
+            frmMenuPrincipal abrir = new frmMenuPrincipal();
+            abrir.Show();
+            this.Hide();
+        }
     }
 }

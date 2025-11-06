@@ -31,6 +31,9 @@ namespace PetCare
             this.Hide();
         }
 
-
+        private void btn_sair_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

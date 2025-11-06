@@ -19,12 +19,16 @@ namespace PetCare
 
         private void btn_cadAnimal_Click(object sender, EventArgs e)
         {
-
+            frmCadAnimal abrir = new frmCadAnimal();
+            abrir.Show();
+            this.Hide();
         }
 
         private void btn_cadVet_Click(object sender, EventArgs e)
         {
-
+            frmCadVet abrir = new frmCadVet();
+            abrir.Show();
+            this.Hide();
         }
 
         private void btn_cadCliente_Click(object sender, EventArgs e)

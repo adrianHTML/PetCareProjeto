@@ -30,14 +30,15 @@
         {
             this.btn_voltar = new System.Windows.Forms.Button();
             this.gpbx_2 = new System.Windows.Forms.GroupBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_codigo = new System.Windows.Forms.TextBox();
+            this.txt_idade = new System.Windows.Forms.TextBox();
             this.txt_nome = new System.Windows.Forms.TextBox();
             this.lbl_codigo = new System.Windows.Forms.Label();
             this.lbl_idade = new System.Windows.Forms.Label();
             this.lbl_nome = new System.Windows.Forms.Label();
             this.btn_limpar = new System.Windows.Forms.Button();
             this.btn_novo = new System.Windows.Forms.Button();
+            this.btn_sair = new System.Windows.Forms.Button();
             this.gpbx_2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,12 +51,13 @@
             this.btn_voltar.TabIndex = 0;
             this.btn_voltar.Text = "Voltar";
             this.btn_voltar.UseVisualStyleBackColor = true;
+            this.btn_voltar.Click += new System.EventHandler(this.btn_voltar_Click);
             // 
             // gpbx_2
             // 
             this.gpbx_2.BackColor = System.Drawing.Color.CadetBlue;
-            this.gpbx_2.Controls.Add(this.textBox2);
-            this.gpbx_2.Controls.Add(this.textBox1);
+            this.gpbx_2.Controls.Add(this.txt_codigo);
+            this.gpbx_2.Controls.Add(this.txt_idade);
             this.gpbx_2.Controls.Add(this.txt_nome);
             this.gpbx_2.Controls.Add(this.lbl_codigo);
             this.gpbx_2.Controls.Add(this.lbl_idade);
@@ -67,19 +69,19 @@
             this.gpbx_2.TabStop = false;
             this.gpbx_2.Text = "Dados do Veterinário";
             // 
-            // textBox2
+            // txt_codigo
             // 
-            this.textBox2.Location = new System.Drawing.Point(134, 127);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 5;
+            this.txt_codigo.Location = new System.Drawing.Point(134, 127);
+            this.txt_codigo.Name = "txt_codigo";
+            this.txt_codigo.Size = new System.Drawing.Size(100, 20);
+            this.txt_codigo.TabIndex = 5;
             // 
-            // textBox1
+            // txt_idade
             // 
-            this.textBox1.Location = new System.Drawing.Point(134, 83);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 4;
+            this.txt_idade.Location = new System.Drawing.Point(134, 83);
+            this.txt_idade.Name = "txt_idade";
+            this.txt_idade.Size = new System.Drawing.Size(100, 20);
+            this.txt_idade.TabIndex = 4;
             // 
             // txt_nome
             // 
@@ -121,12 +123,13 @@
             // btn_limpar
             // 
             this.btn_limpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_limpar.Location = new System.Drawing.Point(238, 319);
+            this.btn_limpar.Location = new System.Drawing.Point(239, 299);
             this.btn_limpar.Name = "btn_limpar";
             this.btn_limpar.Size = new System.Drawing.Size(166, 50);
             this.btn_limpar.TabIndex = 3;
             this.btn_limpar.Text = "Limpar";
             this.btn_limpar.UseVisualStyleBackColor = true;
+            this.btn_limpar.Click += new System.EventHandler(this.btn_limpar_Click);
             // 
             // btn_novo
             // 
@@ -138,11 +141,23 @@
             this.btn_novo.Text = "Novo";
             this.btn_novo.UseVisualStyleBackColor = true;
             // 
+            // btn_sair
+            // 
+            this.btn_sair.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_sair.Location = new System.Drawing.Point(570, 299);
+            this.btn_sair.Name = "btn_sair";
+            this.btn_sair.Size = new System.Drawing.Size(166, 50);
+            this.btn_sair.TabIndex = 5;
+            this.btn_sair.Text = "Sair";
+            this.btn_sair.UseVisualStyleBackColor = true;
+            this.btn_sair.Click += new System.EventHandler(this.btn_sair_Click);
+            // 
             // frmCadVet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btn_sair);
             this.Controls.Add(this.btn_novo);
             this.Controls.Add(this.btn_limpar);
             this.Controls.Add(this.gpbx_2);
@@ -162,10 +177,11 @@
         private System.Windows.Forms.Label lbl_nome;
         private System.Windows.Forms.Label lbl_idade;
         private System.Windows.Forms.Label lbl_codigo;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_codigo;
+        private System.Windows.Forms.TextBox txt_idade;
         private System.Windows.Forms.TextBox txt_nome;
         private System.Windows.Forms.Button btn_limpar;
         private System.Windows.Forms.Button btn_novo;
+        private System.Windows.Forms.Button btn_sair;
     }
 }
